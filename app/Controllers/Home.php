@@ -8,4 +8,9 @@ class Home extends BaseController
     {
         return view('admin/coba');
     }
+
+    public function /()
+    {
+        return view('admin/coba');
+    }
 }

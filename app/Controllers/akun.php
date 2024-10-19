@@ -122,4 +122,15 @@ class Akun extends BaseController
         session()->setFlashdata('pesan', 'Data Berhasil Di Hapus !!');
         return redirect()->to(base_url('akun'));
     }
+
+    public function delete2($id_akun)
+    {
+
+        $data = [
+            'id_akun' => $id_akun,
+        ];
+        $this->modelAkun->delete_data($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Di Hapus !!');
+        return redirect()->to(base_url('akun'));
+    }
 }
